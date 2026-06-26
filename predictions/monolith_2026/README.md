@@ -1,0 +1,112 @@
+CivSim:Kickstarter — Prospective Validation
+
+The Monolith (Plaid Hat Games, 2026)
+
+Prediction recorded: June 26, 2026
+
+Campaign live window: June 25 – July 25, 2026 (approx.)
+
+Campaign URL: https://www.kickstarter.com/projects/plaidhatgames/monolith-1
+
+State of campaign at prediction time: Day 2, approximately 570 backers, ~128% funded (goal: $20,000)
+
+
+What This Is
+
+This document records a prospective prediction made by the CivSim:Kickstarter pipeline before the campaign's outcome is known. The prediction was generated on June 26, 2026 — one day after campaign launch — and committed to this repository before the campaign closed. The git timestamp on this commit is the independently verifiable record that the prediction predates the outcome.
+
+This mirrors the prospective validation embedded in the CivSim:Muni paper (Clyde Hill, November 2026), where a forward prediction was published before the election result was known. The purpose is to demonstrate that CivSim produces useful pre-decisional signal, not post-hoc rationalization of known outcomes.
+
+
+The Campaign
+
+The Monolith is a 3–4 player tactical combat board game from Plaid Hat Games (publisher of Summoner Wars, Dead of Winter). Players command shamans battling for dominance over an alien monolith, using a novel tower-lift simultaneous-commitment mechanic. Original IP, debut designer (Phil Gross), with art by Thomas Elliott (DOOM: The Dark Ages, Warhammer Age of Sigmar). Priced at $90 base, October 2026 delivery.
+
+This campaign was selected for prospective validation because it satisfies the "lowest noise" criteria:
+
+
+Original IP — no licensed franchise contamination in the model's training data
+Established but not mega-famous publisher — Plaid Hat provides real reputation signal without CMON-level dominance that would swamp other signals
+Genuine uncertainty — not an obvious slam dunk, not an obvious failure; a mid-tier campaign where threshold proximity matters
+Rich visual content — the v7 image-interleaved architecture processes campaign imagery directly, making visual signal meaningful
+No training data contamination — campaign launched June 25, 2026; no outcome data in model training
+
+
+
+Pipeline
+
+CivSim:Kickstarter v7 (arch v7 — interleaved image+text content):
+
+
+TAM: 72.8M (US adults × 28% monthly board game play rate, YouGov)
+Segments: 4 experience tiers (novice / casual / midcore / hardcore) × applicable motivational lenses (angelic / reward_hunter / avid_fan / tasteful_hermit) = 14 cells
+Calibration model: Claude Sonnet 4.6, tool-free
+Architecture: CAMPAIGN_CONTENT with interleaved text and images in page-scroll order; model sees campaign visually as a backer would
+Elicitation: per-1000 count framing + magnitude anchor + forced per-block reasoning (Revision 10)
+
+
+
+Prediction
+
+Implied backer count by reach scenario
+
+Reach scenarioImplied backers (mean across lenses)Lens spread (min → max)Low~1,7571,304 – 2,017Medium~5,0303,737 – 5,767High~14,00310,429 – 16,035
+
+The distribution chart (plaidhatgames_monolith-1_distribution.png) shows the reach scenario sweep. No actual backer line is shown — the outcome is unknown at prediction time.
+
+Most likely reach scenario
+
+Low reach is the most structurally plausible scenario for this campaign. Reasoning:
+
+
+Original IP with no prior franchise community → limited organic BGG/community amplification
+Debut designer → no existing audience to mobilize
+$90 price point → suppresses casual impulse conversion
+Plaid Hat's publisher reach is moderate, not CMON-scale
+
+
+A low-reach outcome implies 1,304–2,017 final backers as the central prediction. Medium reach (5,030 implied) would require meaningful BGG/press amplification and community momentum beyond what was visible at launch.
+
+Convergent qualitative findings (from cluster_phrases.py)
+
+Top concerns (independent across 14 cells):
+
+
+Unknown designer with no prior published titles — surfaces in 10/14 cells (36% of concern phrases). Phil Gross's debut status is the dominant friction point across every tier and lens.
+$90+ price point for unproven campaign — surfaces in 9/14 cells (32%). Price friction is especially acute for non-hardcore tiers where no prior publisher relationship exists.
+Crowded area-control genre with no differentiated hook — surfaces in 2/14 hardcore cells. Genre saturation is a secondary concern for the most discerning personas.
+
+
+Top selling points (independent across 14 cells):
+
+
+Plaid Hat Games' ~20-year track record — surfaces in 11/14 cells (39%). Publisher reputation is the single strongest conversion driver, doing the work that IP or designer loyalty would normally do.
+Striking visual components and atmospheric artwork — surfaces in 5/14 cells (18%). Thomas Elliott's credentials create genuine table-presence appeal.
+Thomas Elliott's AAA art credentials — surfaces in 3/14 hardcore/midcore cells (11%). DOOM: The Dark Ages and Warhammer AoS credits resonate with genre-fluent hobbyists.
+Novel tower-lift mechanic — surfaces in 2/14 tasteful_hermit cells (7%). Only the most gameplay-focused personas identified the simultaneous-commitment mechanic as genuinely differentiated.
+
+
+
+Backing Probability Per Cell
+
+TierLensBacking probabilityPer 1,000noviceangelic0.00808novicereward_hunter0.018018noviceavid_fan0.012012casualangelic0.00606casualreward_hunter0.015015casualavid_fan0.00404midcoreangelic0.028028midcorereward_hunter0.025025midcoreavid_fan0.018018midcoretasteful_hermit0.018018hardcoreangelic0.028028hardcorereward_hunter0.028028hardcoreavid_fan0.030030hardcoretasteful_hermit0.022022
+
+Mean: 0.0186 · Min: 0.0040 · Max: 0.0300
+
+
+What to Verify When Campaign Closes
+
+
+Final backer count — compare to low/medium/high scenario ranges above
+Total raised — compare to implied backer count × average pledge (~$90)
+Which reach scenario brackets the actual outcome — the prediction is validated if the actual falls within the low–medium range
+Whether the qualitative findings were accurate — did backers cite unknown designer and price friction in comments? Did Plaid Hat's reputation do the conversion work?
+
+
+
+Naive Baseline Comparison
+
+For reference, a naive single-shot Claude query (no persona scaffolding, no magnitude anchor, no structured elicitation) on the same campaign content would produce a single rating/probability with no threshold-proximity information and no per-lens breakdown. The CivSim pipeline's output — 14 structurally forced disagreements across personas, an implied backer count comparable to a real funding threshold, and convergent qualitative findings — is the architectural value being validated here.
+
+
+Prediction generated by CivSim:Kickstarter v7. Pipeline code and calibration methodology documented in the CivSim:Muni paper (Chung, 2026). This document and associated calibration JSON committed to this repository on June 26, 2026, before campaign close.
