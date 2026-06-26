@@ -1,0 +1,128 @@
+{
+  "campaign": "The Monolith",
+  "field": "selling_points",
+  "n_total_phrases": 28,
+  "n_themes": 8,
+  "themes": [
+    {
+      "label": "Plaid Hat Games' ~20-year track record reduces fulfillment risk",
+      "count": 11,
+      "cells": [
+        "casual/angelic",
+        "hardcore/angelic",
+        "hardcore/avid_fan",
+        "hardcore/reward_hunter",
+        "hardcore/tasteful_hermit",
+        "midcore/angelic",
+        "midcore/avid_fan",
+        "midcore/reward_hunter",
+        "midcore/tasteful_hermit",
+        "novice/angelic"
+      ],
+      "phrases": [
+        "explicit trust language from a nearly 20-year-old company reinforces reliability",
+        "Plaid Hat Games is a legitimate ~20-year-old publisher offering some trust signal",
+        "Plaid Hat Games as established publisher with delivery history directly addresses creator-trust motivation",
+        "Plaid Hat Games as nearly 20-year-old publisher substantially reduces fulfillment risk",
+        "Plaid Hat Games is a legitimate ~20-year-old publisher reducing fulfillment risk",
+        "established publisher with low fulfillment risk and complete design",
+        "Plaid Hat Games' institutional credibility and explicit accountability pledge directly addresses this persona's trust requirement",
+        "Colby Dauch founder involvement and four prior Kickstarters signals organizational reliability",
+        "Plaid Hat Games' ~20-year track record reduces delivery risk for a persona prioritizing fulfillment reliability",
+        "Plaid Hat Games' ~20-year track record offers concrete delivery confidence",
+        "Plaid Hat Games' nearly 20-year track record reduces delivery risk"
+      ]
+    },
+    {
+      "label": "Striking visual components and atmospheric artwork create shelf/table appeal",
+      "count": 5,
+      "cells": [
+        "casual/avid_fan",
+        "casual/reward_hunter",
+        "midcore/reward_hunter",
+        "novice/avid_fan",
+        "novice/reward_hunter"
+      ],
+      "phrases": [
+        "professional striking art and physical tower create strong shelf-appeal impression",
+        "striking 3D monolith tower piece creates genuine visual spectacle",
+        "striking physical components and table presence visible in product photos",
+        "striking atmospheric artwork may create momentary interest",
+        "verified high-caliber artist credentials and polished component list suggest strong physical value for price"
+      ]
+    },
+    {
+      "label": "Thomas Elliott's AAA game/art credentials signal production quality",
+      "count": 3,
+      "cells": [
+        "hardcore/avid_fan",
+        "hardcore/reward_hunter",
+        "midcore/avid_fan"
+      ],
+      "phrases": [
+        "Thomas Elliott's credentials (DOOM: The Dark Ages, Games Workshop) resonate with grimdark hobbyists",
+        "Thomas Elliott's verifiable AAA credentials (DOOM: The Dark Ages, Warhammer AoS) signal genuine production art quality recognizable to a BGG hobbyist",
+        "Thomas Elliott's high-profile credentials (DOOM: The Dark Ages, Warhammer AoS) are recognizable to BGG-following hobbyists"
+      ]
+    },
+    {
+      "label": "Game fully designed and production-ready with near-term delivery",
+      "count": 2,
+      "cells": [
+        "casual/angelic",
+        "midcore/angelic"
+      ],
+      "phrases": [
+        "game is fully designed and ready for production with October 2026 delivery, reducing risk",
+        "game fully designed and production-ready with near-term October 2026 delivery"
+      ]
+    },
+    {
+      "label": "$10 Kickstarter discount vs. MSRP signals purchase value",
+      "count": 2,
+      "cells": [
+        "casual/reward_hunter",
+        "novice/reward_hunter"
+      ],
+      "phrases": [
+        "large component spread at $10 below stated MSRP signals clear value",
+        "$10 Kickstarter discount vs. stated MSRP signals purchase value"
+      ]
+    },
+    {
+      "label": "Monolith tower mechanic as differentiated gameplay feature",
+      "count": 2,
+      "cells": [
+        "hardcore/tasteful_hermit",
+        "midcore/tasteful_hermit"
+      ],
+      "phrases": [
+        "Monolith tower hidden-action reveal is a genuinely differentiated mechanic",
+        "novel tower-lift simultaneous-commitment mechanic creates real tension"
+      ]
+    },
+    {
+      "label": "Dice Tower / Tom Vasel endorsement as minor credibility signal",
+      "count": 2,
+      "cells": [
+        "casual/avid_fan",
+        "novice/avid_fan"
+      ],
+      "phrases": [
+        "Tom Vasel endorsement offers a faint trust signal even for less experienced hobbyists",
+        "Dice Tower endorsement is a minor credibility signal for the tiny fraction who recognize it"
+      ]
+    },
+    {
+      "label": "Phil Gross's personal multi-year creator devotion humanizes campaign",
+      "count": 1,
+      "cells": [
+        "novice/angelic"
+      ],
+      "phrases": [
+        "Phil Gross's personal 3-year devotion humanizes the creator support angle"
+      ]
+    }
+  ],
+  "ungrouped": []
+}
