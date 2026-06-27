@@ -28,13 +28,13 @@ This campaign was selected for prospective validation because it satisfies the "
 Original IP — no licensed franchise contamination in the model's training data
 Established but not mega-famous publisher — Plaid Hat provides real reputation signal without CMON-level dominance that would swamp other signals
 Genuine uncertainty — not an obvious slam dunk, not an obvious failure; a mid-tier campaign where threshold proximity matters
-Rich visual content — the v7 image-interleaved architecture processes campaign imagery directly, making visual signal meaningful
+Rich visual content — the v8 image-interleaved architecture processes campaign imagery directly, making visual signal meaningful
 No training data contamination — campaign launched June 25, 2026; no outcome data in model training
 
 
 Pipeline
 
-CivSim:Kickstarter v7 (arch v7 — interleaved image+text content):
+CivSim:Kickstarter v8 (arch v8 — interleaved image+text content):
 
 Prediction
 
