@@ -61,9 +61,7 @@ predictions/
   monolith_2026/
     README.md                          ← prediction document
     plaidhatgames_monolith-1_calibration.json
-    plaidhatgames_monolith-1_distribution.png
-    plaidhatgames_monolith-1_concerns_clusters.json
-    plaidhatgames_monolith-1_selling_points_clusters.json
+
 ```
 
 ---
